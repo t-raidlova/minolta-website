@@ -1,0 +1,39 @@
+.features-container {
+	background: var(--features-bg);
+	overflow: hidden;
+}
+
+.features {
+	min-height: 90vh;
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	.cards {
+		display: flex;
+		justify-content: space-between;
+		color: black;
+		.card {
+			background: rgba(255, 255, 255, 0.9);
+			margin: 0rem 5rem;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			border-radius: 1rem;
+			overflow: hidden;
+			&:hover {
+				background: white;
+			}
+			h4 {
+				margin: 2rem 0rem 1rem 0rem;
+			}
+			p {
+				padding: 2rem;
+			}
+			img {
+				object-fit: cover;
+			}
+		}
+	}
+}
